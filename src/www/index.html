@@ -169,22 +169,36 @@
       background-color: #f9f9f9;
     }
 
-    @media(max-width: 768px){
-      .custom-navtitle, .custom-menubutton {
-          font-size: 15px;
-      }
+    @media (min-width: 769px) and (max-width: 1012px) {
+          #form-label {
+                left: 25%;
+            }
+        }
 
-      .custom-arrow {
-          right: 40px;
-      }
-    }
+        @media (max-width: 768px) {
+            #form-label {
+                left: 20%;
+            }
 
-    #message {
-      display: none;
-      color: green;
-    }
+            .custom-navtitle,
+            .custom-menubutton {
+                font-size: 15px;
+            }
 
-    @media(max-width: 400px){
+            .custom-arrow {
+                right: 40px;
+            }
+        }
+
+        #message {
+            display: none;
+            color: green;
+        }
+
+        @media (max-width: 400px) {
+          #form-label {
+                left: 25%;
+            }
       .custom-menu {
           width: 250px;
       }
@@ -265,7 +279,7 @@
   </div>
   <div class="container">
     <form class="form-group generator_form" enctype="multipart/form-data" id="form" method="post" name="form" role="form">
-      <div class="form-group col-md-offset-4 col-xs-offset-2 col-xs-8 col-md-4 form-div-board" style="margin-bottom: 0;">
+      <div id="form-label" class="form-group col-md-offset-4 col-xs-offset-2 col-xs-8 col-md-4 form-div-board" style="margin-bottom: 0;">
         <label for="name">Email</label>
           <div class="input-group margin-bottom-sm">
             <span class="input-group-addon"><i class="fa fa-envelope-o fa-fw"></i></span>
